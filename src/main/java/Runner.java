@@ -9,6 +9,13 @@ public class Runner {
         System.out.println("Matrix A is " + matrixA);
         System.out.println("Matrix B is " + matrixB);
 
+        try {
+            Matrix result = Multiplicator.multiply(matrixA, matrixB);
+            System.out.println("Matrix result is " + result);
+        } catch (Multiplicator.MultipleException e) {
+            System.err.println("Matrices could not be multiplied");
+        }
+
     }
 
 
