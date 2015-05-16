@@ -6,7 +6,7 @@ public class MatrixFactory {
         Matrix matrix = new Matrix(n,m);
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                matrix.setValue(i,j, (int) Math.random());
+                matrix.setValue(i, j, (int) (Math.random()*100));
             }
         }
         return matrix;
