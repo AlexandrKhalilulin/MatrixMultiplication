@@ -16,12 +16,9 @@ public class Multiplicator {
                 }
             result.setValue(i, j, value);
             }
-
         }
-
             return result;
     }
-
     public static class MultipleException extends Exception {
     }
 }
